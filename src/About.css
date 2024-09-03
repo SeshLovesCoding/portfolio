@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Monument';
+    src: url('./monument.otf') format('otf'); /* Path to the font file */
+  }
+  
+  .scroll-container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .stretched-word {
+    display: inline-block;
+    font-family: 'Monument', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -3px;
+    color: transparent; /* Set text color to transparent */
+    -webkit-text-stroke: 2.5px #FFD600; /* Add a 1px black stroke */
+    text-shadow: 0 0 0px rgba(255, 255, 255, 0); /* Add a black shadow to fill the space inside the stroke */
+    white-space: nowrap; /* Prevent text from wrapping */
+    font-weight: bold;
+    font-size: 6.3rem;
+    transform: scale(1.4,.99); /* Adjust the scale value as needed */
+  }
+  

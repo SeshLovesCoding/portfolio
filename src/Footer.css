@@ -1,0 +1,205 @@
+.footer-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    height: 1000px;
+    width: auto;
+    background: url('./image/footer-bg.png');
+    background-size: 100%;
+    /* Ensures the image covers the entire element */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+    background-position: center center;
+    /* Centers the image */
+}
+
+.yellow-text {
+    color: #ffd600;
+}
+
+.blue{
+    color: #88c3f1;
+}
+
+.footer-title {
+    height: 194px;
+}
+
+.footer-title-text {
+    font-family: 'Monument Bold' , sans-serif;
+    color: white;
+    line-height: 0.93;
+    font-size: 5.5rem;
+    max-height: 100px;
+    text-align: center;
+}
+
+.col-content {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+    border-radius: 110px 110px 110px 110px;
+    -webkit-border-radius: 110px 110px 110px 110px;
+    -moz-border-radius: 110px 110px 110px 110px;
+    box-shadow: inset 0 0 50px white, 0 0 35px rgba(255, 255, 255, 0.5);
+    width: 75%;
+    position: absolute;
+    bottom: 80px;
+    height: 460px;
+    overflow: hidden; /* Ensures the pseudo-element stays within bounds */
+    justify-content: center;
+}
+
+.col-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: rgba(255, 255, 255, 0.05); /* Increase the base overlay opacity */
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0.5px, transparent 0.5px); /* Smaller and denser grain */
+    background-size: 2px 2px; /* Smaller grid for more grain */
+    opacity: 0.7; /* Increase the overall opacity of the grain */
+}
+
+.glassmorphism-card{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    gap: 110px;
+}
+
+.row-spotify{
+    width: 430px;
+}
+
+.row-quote{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+}
+
+.row-socials{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content: center;
+}
+
+.spotify-text{
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color:white;
+}
+
+.quote{
+    color: white;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: bold;
+    font-size: 1.22rem;
+    line-height: 0.96;
+}
+
+.footer-picture{
+    margin-bottom:10px;
+    height: 220px;
+    width: 220px;
+}
+
+.contact-text{
+    color: white;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom:30px;
+}
+
+.footer-button{
+    color: white;
+    padding: 0px;
+    opacity: 70%;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: bold;
+    font-size: 1.45rem;
+    border: 0px;
+    background-color: transparent;
+    text-align: center;
+}
+
+.footer-button:hover{
+    color: #00ff00;
+    transition: 0.5s;
+}
+
+.socials{
+    opacity: 70%;
+}
+
+.arrow{
+    vertical-align: middle;
+}
+
+.footer-copyright{
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: bolder;
+    color: white;
+    opacity: 50%;
+    font-size: 1.45rem;
+    position: absolute;
+    bottom: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-title-text{
+        font-size:1.7rem;
+    }
+
+    .footer-title{
+        height: fit-content;
+    }
+
+    .col-content{
+        height: 800px;
+    }
+
+    .glassmorphism-card{
+        flex-direction: column;
+        padding-left: 0px;
+        align-items: center;
+        gap:0px;
+    }
+
+    .row-quote{
+        text-align: center;
+        align-items: center;
+    }
+
+    .row-spotify{
+        visibility: hidden;
+    }
+
+    .row-socials{
+        width: 198px;
+    }
+
+    iframe{
+        height:0px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1524px){
+    .footer-container{
+        height: 800px;
+    }
+}
+
+
+
+

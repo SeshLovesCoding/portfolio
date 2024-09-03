@@ -1,0 +1,78 @@
+.online{
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: auto; /* Full viewport height */
+    margin-top: 13px; /* Remove default margin */
+    margin-right:10px;
+    width: 10px;
+    height: 10px;
+    background-color: #00ff00; /* green color */
+    border-radius: 50%; /* creates a circle */
+    box-shadow: 0 0 5px 5px #00ff00; /* adds a glowing effect */
+    animation: pulse 1s infinite alternate; /* animation to make it pulse */
+  }
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 6px 5px #00ff00; /* initial shadow */
+    }
+    100% {
+      box-shadow: 0 0 10px 4px #00ff00; /* larger shadow for pulsing effect */
+    }
+}
+
+.navbar{
+background: rgba(0, 0, 0, 0.21);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+}
+
+.mobile-remove{
+  user-select: none;
+  cursor: none;
+}
+
+.mobile-remove::hover{
+  color: white;
+}
+
+#default-cursor{
+  cursor: default !important;
+}
+
+#default-cursor:hover{
+  color: white;
+}
+
+/******** Navigation bar *************/
+.custom-color .nav-link{
+  font-family: "Darker Grotesque", sans-serif;
+  color:white;
+  font-size:1.4rem;
+  color: white; /* change text-color of navbar */
+}
+
+.custom-color .nav-link:hover{
+  color: #ffd600;
+}
+
+.navbar-nav .nav-link.active{
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  #mobile-text{
+    text-align: center;
+  }
+
+  #mobile-remove{
+    visibility: hidden;
+  }
+
+  .custom-color .nav-link{
+    font-size: 2rem;
+  }
+}
+
